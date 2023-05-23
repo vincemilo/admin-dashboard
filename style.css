@@ -81,8 +81,7 @@ a:hover {
 }
 
 header {
-    padding-left: 30px;
-    padding-top: 20px;
+    padding: 8px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     z-index: 2;
 }
@@ -96,7 +95,6 @@ header {
 
 .magnify {
     font-size: 1.1rem;
-    margin-right: 10px;
 }
 
 .header-search {
@@ -117,9 +115,9 @@ input {
     display: grid;
     grid-template-columns: .3fr .4fr 1fr;
     align-items: center;
-    width: 250px;
-    justify-items: end;
-    margin-left: 100px;
+    max-width: 250px;
+    justify-self: end;
+    padding: 8px;
 }
 
 .bellicon {
@@ -128,9 +126,8 @@ input {
 }
 
 .searchbar {
-    width: 95%;
+    max-width: 85%;
     border-radius: 25px;
-    height: 20px;
 }
 
 .user-avatar-small {
@@ -139,6 +136,7 @@ input {
 
 .user-avatar-med {
     width: 55px;
+    padding: 16px;
 }
 
 .header-greeting {
@@ -146,17 +144,15 @@ input {
     grid-template-columns: .2fr 1fr;
     grid-template-rows: 1fr 2fr;
     align-items: center;
-    width: 400px;
+    justify-self: start;
 }
 
 .greeting {
     font-size: .8rem;
-    margin-bottom: -15px;
     font-weight: 700;
 }
 
 .greeting-name {
-    margin-top: 0;
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -168,9 +164,10 @@ input {
 .header-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 280px;
-    margin-left: 100px;
+    max-width: 280px;
     margin-top: 15px;
+    gap: 8px;
+    justify-self: end;
 }
 
 .headerbtn {
